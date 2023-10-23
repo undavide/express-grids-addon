@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Adobe Express Add-on tutorial using JavaScript and the Script Runtime" />
+    <meta name="keywords" content="Adobe, Express, Add-On, JavaScript, Script Runtime, Document API" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids add-on</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <sp-theme scale="medium" color="light" theme="express">
+        <h2>Design Grid creator</h2>
+        <div class="row gap-20">
+            <div class="row">
+                <div class="column">
+                    <sp-field-label for="rows" size="m">Rows</sp-field-label>
+                    <sp-number-field id="rows"></sp-number-field>
+                </div>
+                <sp-swatch id="rowsColorSwatch" class="color-well"></sp-swatch>
+                <input type="color" id="rowsColorPicker" style="display: none;">
+            </div>
+            <div class="row">
+                <div class="column">
+                    <sp-field-label for="cols" size="m">Columns</sp-field-label>
+                    <sp-number-field id="cols"></sp-number-field>
+                </div>
+                <sp-swatch id="colsColorSwatch" class="color-well"></sp-swatch>
+                <input type="color" id="colsColorPicker" style="display: none;">
+            </div>
+        </div>
+        <div class="row">
+            <sp-slider label="Gutter" id="gutter" variant="filled" editable hide-stepper min="1" max="50"
+                step="1"></sp-slider>
+        </div>
+        <sp-button-group horizontal>
+            <sp-button id="deleteGrid" disabled>Delete</sp-button>
+            <sp-button id="createGrid" disabled>Create</sp-button>
+        </sp-button-group>
+    </sp-theme>
+</body>
+
+</html>
