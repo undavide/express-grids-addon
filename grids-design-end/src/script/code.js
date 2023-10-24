@@ -2,7 +2,7 @@ import addOnScriptSdk from "AddOnScriptSdk";
 import { editor } from "express";
 import { addColumns, addRows } from "./shapeUtils";
 
-// Get the Script runtime.
+// Get the Authoring Sandbox.
 const { runtime } = addOnScriptSdk.instance;
 
 var gridRef = null;

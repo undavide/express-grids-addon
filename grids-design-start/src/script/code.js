@@ -6,7 +6,7 @@ function start() {
     log: (...args) => {
       console.log(...args);
     },
-    // add other properties will go here...
+    // other properties will go here...
   });
 }
 
